@@ -22,6 +22,39 @@
 		F922E9482598EA85007F33D4 /* SplashModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9422598EA85007F33D4 /* SplashModels.swift */; };
 		F922E9492598EA85007F33D4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9432598EA85007F33D4 /* SplashViewController.swift */; };
 		F922E94A2598EA85007F33D4 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9442598EA85007F33D4 /* SplashInteractor.swift */; };
+		F922E9592598EB25007F33D4 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9532598EB25007F33D4 /* BaseNode.swift */; };
+		F922E95A2598EB25007F33D4 /* BaseASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9542598EB25007F33D4 /* BaseASViewController.swift */; };
+		F922E95B2598EB25007F33D4 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9552598EB25007F33D4 /* BasePresenter.swift */; };
+		F922E95C2598EB25007F33D4 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9562598EB25007F33D4 /* BaseRouter.swift */; };
+		F922E95D2598EB25007F33D4 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9572598EB25007F33D4 /* BaseInteractor.swift */; };
+		F922E95E2598EB25007F33D4 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9582598EB25007F33D4 /* BaseWorker.swift */; };
+		F922E9642598EB6B007F33D4 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9632598EB6B007F33D4 /* Logging.swift */; };
+		F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E96C2598EE85007F33D4 /* MainPresenter.swift */; };
+		F922E9732598EE85007F33D4 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E96D2598EE85007F33D4 /* MainWorker.swift */; };
+		F922E9742598EE85007F33D4 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E96E2598EE85007F33D4 /* MainRouter.swift */; };
+		F922E9752598EE85007F33D4 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E96F2598EE85007F33D4 /* MainModels.swift */; };
+		F922E9762598EE85007F33D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9702598EE85007F33D4 /* MainViewController.swift */; };
+		F922E9772598EE85007F33D4 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9712598EE85007F33D4 /* MainInteractor.swift */; };
+		F922E9842598EE8E007F33D4 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E97E2598EE8E007F33D4 /* FeedPresenter.swift */; };
+		F922E9852598EE8E007F33D4 /* FeedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E97F2598EE8E007F33D4 /* FeedWorker.swift */; };
+		F922E9862598EE8E007F33D4 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9802598EE8E007F33D4 /* FeedRouter.swift */; };
+		F922E9872598EE8E007F33D4 /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9812598EE8E007F33D4 /* FeedModels.swift */; };
+		F922E9882598EE8E007F33D4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9822598EE8E007F33D4 /* FeedViewController.swift */; };
+		F922E9892598EE8E007F33D4 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9832598EE8E007F33D4 /* FeedInteractor.swift */; };
+		F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98D2598EE97007F33D4 /* AddPresenter.swift */; };
+		F922E9942598EE97007F33D4 /* AddWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98E2598EE97007F33D4 /* AddWorker.swift */; };
+		F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98F2598EE97007F33D4 /* AddRouter.swift */; };
+		F922E9962598EE97007F33D4 /* AddModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9902598EE97007F33D4 /* AddModels.swift */; };
+		F922E9972598EE97007F33D4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9912598EE97007F33D4 /* AddViewController.swift */; };
+		F922E9982598EE97007F33D4 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9922598EE97007F33D4 /* AddInteractor.swift */; };
+		F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99C2598EEA3007F33D4 /* UserPresenter.swift */; };
+		F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99D2598EEA3007F33D4 /* UserWorker.swift */; };
+		F922E9A42598EEA3007F33D4 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99E2598EEA3007F33D4 /* UserRouter.swift */; };
+		F922E9A52598EEA3007F33D4 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99F2598EEA3007F33D4 /* UserModels.swift */; };
+		F922E9A62598EEA3007F33D4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9A02598EEA3007F33D4 /* UserViewController.swift */; };
+		F922E9A72598EEA3007F33D4 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9A12598EEA3007F33D4 /* UserInteractor.swift */; };
+		F922E9AC2598EF95007F33D4 /* BaseAsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */; };
+		F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +102,39 @@
 		F922E9422598EA85007F33D4 /* SplashModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModels.swift; sourceTree = "<group>"; };
 		F922E9432598EA85007F33D4 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F922E9442598EA85007F33D4 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		F922E9532598EB25007F33D4 /* BaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		F922E9542598EB25007F33D4 /* BaseASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseASViewController.swift; sourceTree = "<group>"; };
+		F922E9552598EB25007F33D4 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		F922E9562598EB25007F33D4 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		F922E9572598EB25007F33D4 /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		F922E9582598EB25007F33D4 /* BaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWorker.swift; sourceTree = "<group>"; };
+		F922E9632598EB6B007F33D4 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		F922E96C2598EE85007F33D4 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		F922E96D2598EE85007F33D4 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		F922E96E2598EE85007F33D4 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		F922E96F2598EE85007F33D4 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		F922E9702598EE85007F33D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F922E9712598EE85007F33D4 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		F922E97E2598EE8E007F33D4 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		F922E97F2598EE8E007F33D4 /* FeedWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWorker.swift; sourceTree = "<group>"; };
+		F922E9802598EE8E007F33D4 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		F922E9812598EE8E007F33D4 /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
+		F922E9822598EE8E007F33D4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F922E9832598EE8E007F33D4 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		F922E98D2598EE97007F33D4 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		F922E98E2598EE97007F33D4 /* AddWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorker.swift; sourceTree = "<group>"; };
+		F922E98F2598EE97007F33D4 /* AddRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouter.swift; sourceTree = "<group>"; };
+		F922E9902598EE97007F33D4 /* AddModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModels.swift; sourceTree = "<group>"; };
+		F922E9912598EE97007F33D4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		F922E9922598EE97007F33D4 /* AddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		F922E99C2598EEA3007F33D4 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		F922E99D2598EEA3007F33D4 /* UserWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorker.swift; sourceTree = "<group>"; };
+		F922E99E2598EEA3007F33D4 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		F922E99F2598EEA3007F33D4 /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		F922E9A02598EEA3007F33D4 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		F922E9A12598EEA3007F33D4 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAsTabBarController.swift; sourceTree = "<group>"; };
+		F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +243,7 @@
 			children = (
 				F922E91E2598E9AD007F33D4 /* Application */,
 				F922E93D2598EA6F007F33D4 /* Scenes */,
+				F922E9512598EAE1007F33D4 /* Common */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -235,6 +302,10 @@
 			isa = PBXGroup;
 			children = (
 				F922E93E2598EA78007F33D4 /* Splash */,
+				F922E9682598EDA1007F33D4 /* Main */,
+				F922E9692598EDF1007F33D4 /* Feed */,
+				F922E96A2598EE08007F33D4 /* Add */,
+				F922E96B2598EE1E007F33D4 /* User */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -250,6 +321,106 @@
 				F922E9442598EA85007F33D4 /* SplashInteractor.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		F922E9512598EAE1007F33D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F922E9522598EAEC007F33D4 /* Bases */,
+				F922E9622598EB2F007F33D4 /* Utilities */,
+				F922E9B02598F198007F33D4 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F922E9522598EAEC007F33D4 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				F922E9542598EB25007F33D4 /* BaseASViewController.swift */,
+				F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */,
+				F922E9572598EB25007F33D4 /* BaseInteractor.swift */,
+				F922E9532598EB25007F33D4 /* BaseNode.swift */,
+				F922E9552598EB25007F33D4 /* BasePresenter.swift */,
+				F922E9562598EB25007F33D4 /* BaseRouter.swift */,
+				F922E9582598EB25007F33D4 /* BaseWorker.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		F922E9622598EB2F007F33D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F922E9632598EB6B007F33D4 /* Logging.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F922E9682598EDA1007F33D4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F922E96C2598EE85007F33D4 /* MainPresenter.swift */,
+				F922E96D2598EE85007F33D4 /* MainWorker.swift */,
+				F922E96E2598EE85007F33D4 /* MainRouter.swift */,
+				F922E96F2598EE85007F33D4 /* MainModels.swift */,
+				F922E9702598EE85007F33D4 /* MainViewController.swift */,
+				F922E9712598EE85007F33D4 /* MainInteractor.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F922E9692598EDF1007F33D4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F922E97E2598EE8E007F33D4 /* FeedPresenter.swift */,
+				F922E97F2598EE8E007F33D4 /* FeedWorker.swift */,
+				F922E9802598EE8E007F33D4 /* FeedRouter.swift */,
+				F922E9812598EE8E007F33D4 /* FeedModels.swift */,
+				F922E9822598EE8E007F33D4 /* FeedViewController.swift */,
+				F922E9832598EE8E007F33D4 /* FeedInteractor.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F922E96A2598EE08007F33D4 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				F922E98D2598EE97007F33D4 /* AddPresenter.swift */,
+				F922E98E2598EE97007F33D4 /* AddWorker.swift */,
+				F922E98F2598EE97007F33D4 /* AddRouter.swift */,
+				F922E9902598EE97007F33D4 /* AddModels.swift */,
+				F922E9912598EE97007F33D4 /* AddViewController.swift */,
+				F922E9922598EE97007F33D4 /* AddInteractor.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		F922E96B2598EE1E007F33D4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F922E99C2598EEA3007F33D4 /* UserPresenter.swift */,
+				F922E99D2598EEA3007F33D4 /* UserWorker.swift */,
+				F922E99E2598EEA3007F33D4 /* UserRouter.swift */,
+				F922E99F2598EEA3007F33D4 /* UserModels.swift */,
+				F922E9A02598EEA3007F33D4 /* UserViewController.swift */,
+				F922E9A12598EEA3007F33D4 /* UserInteractor.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F922E9B02598F198007F33D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F922E9B92598F1D9007F33D4 /* Reactive */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F922E9B92598F1D9007F33D4 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */,
+			);
+			path = Reactive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,12 +662,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				F922E8C52598E89D007F33D4 /* AppDelegate.swift in Sources */,
+				F922E9AC2598EF95007F33D4 /* BaseAsTabBarController.swift in Sources */,
+				F922E95B2598EB25007F33D4 /* BasePresenter.swift in Sources */,
+				F922E9752598EE85007F33D4 /* MainModels.swift in Sources */,
+				F922E9A72598EEA3007F33D4 /* UserInteractor.swift in Sources */,
+				F922E9872598EE8E007F33D4 /* FeedModels.swift in Sources */,
+				F922E9A42598EEA3007F33D4 /* UserRouter.swift in Sources */,
+				F922E9772598EE85007F33D4 /* MainInteractor.swift in Sources */,
 				F922E94A2598EA85007F33D4 /* SplashInteractor.swift in Sources */,
+				F922E9742598EE85007F33D4 /* MainRouter.swift in Sources */,
+				F922E9962598EE97007F33D4 /* AddModels.swift in Sources */,
+				F922E9762598EE85007F33D4 /* MainViewController.swift in Sources */,
+				F922E9862598EE8E007F33D4 /* FeedRouter.swift in Sources */,
+				F922E9642598EB6B007F33D4 /* Logging.swift in Sources */,
+				F922E9892598EE8E007F33D4 /* FeedInteractor.swift in Sources */,
+				F922E9592598EB25007F33D4 /* BaseNode.swift in Sources */,
 				F922E9472598EA85007F33D4 /* SplashRouter.swift in Sources */,
+				F922E95D2598EB25007F33D4 /* BaseInteractor.swift in Sources */,
 				F922E9452598EA85007F33D4 /* SplashPresenter.swift in Sources */,
 				F922E9492598EA85007F33D4 /* SplashViewController.swift in Sources */,
+				F922E95C2598EB25007F33D4 /* BaseRouter.swift in Sources */,
+				F922E9982598EE97007F33D4 /* AddInteractor.swift in Sources */,
+				F922E9972598EE97007F33D4 /* AddViewController.swift in Sources */,
+				F922E9942598EE97007F33D4 /* AddWorker.swift in Sources */,
+				F922E9A62598EEA3007F33D4 /* UserViewController.swift in Sources */,
+				F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */,
+				F922E9732598EE85007F33D4 /* MainWorker.swift in Sources */,
+				F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */,
+				F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */,
+				F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */,
+				F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */,
 				F922E9482598EA85007F33D4 /* SplashModels.swift in Sources */,
+				F922E95E2598EB25007F33D4 /* BaseWorker.swift in Sources */,
+				F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */,
 				F922E9462598EA85007F33D4 /* SplashWorker.swift in Sources */,
+				F922E9842598EE8E007F33D4 /* FeedPresenter.swift in Sources */,
+				F922E9882598EE8E007F33D4 /* FeedViewController.swift in Sources */,
+				F922E95A2598EB25007F33D4 /* BaseASViewController.swift in Sources */,
+				F922E9A52598EEA3007F33D4 /* UserModels.swift in Sources */,
+				F922E9852598EE8E007F33D4 /* FeedWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

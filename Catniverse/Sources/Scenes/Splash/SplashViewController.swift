@@ -34,6 +34,16 @@ final class SplashViewController: BaseASViewController {
     presenter.view = viewController
     router.viewController = viewController
     router.dataStore = interactor
+    
+    //TODO: Setup bussiness logic
+    view.backgroundColor = .lightGray
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      let mainViewController = MainViewController().then {
+        $0.modalTransitionStyle = .crossDissolve
+        $0.modalPresentationStyle = .fullScreen
+      }
+      self.present(mainViewController, animated: true)
+    }
   }
 }
 
