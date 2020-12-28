@@ -57,6 +57,8 @@
 		F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */; };
 		F922EA0F2599D592007F33D4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA0E2599D592007F33D4 /* Device.swift */; };
 		F922EA832599F708007F33D4 /* FeedContainerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA822599F708007F33D4 /* FeedContainerNode.swift */; };
+		F922EA8C259A2D11007F33D4 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA8B259A2D11007F33D4 /* UIViewController+.swift */; };
+		F922EA94259A2D85007F33D4 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA93259A2D85007F33D4 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		F922EA0E2599D592007F33D4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		F922EA822599F708007F33D4 /* FeedContainerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerNode.swift; sourceTree = "<group>"; };
+		F922EA8B259A2D11007F33D4 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		F922EA93259A2D85007F33D4 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +420,7 @@
 		F922E9B02598F198007F33D4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F922EA8A259A2D03007F33D4 /* UIKit */,
 				F922E9B92598F1D9007F33D4 /* Reactive */,
 			);
 			path = Extensions;
@@ -443,6 +448,15 @@
 				F922EA822599F708007F33D4 /* FeedContainerNode.swift */,
 			);
 			path = Nodes;
+			sourceTree = "<group>";
+		};
+		F922EA8A259A2D03007F33D4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F922EA8B259A2D11007F33D4 /* UIViewController+.swift */,
+				F922EA93259A2D85007F33D4 /* UIApplication.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -716,8 +730,10 @@
 				F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */,
 				F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */,
 				F922E9482598EA85007F33D4 /* SplashModels.swift in Sources */,
+				F922EA8C259A2D11007F33D4 /* UIViewController+.swift in Sources */,
 				F922E95E2598EB25007F33D4 /* BaseWorker.swift in Sources */,
 				F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */,
+				F922EA94259A2D85007F33D4 /* UIApplication.swift in Sources */,
 				F922E9462598EA85007F33D4 /* SplashWorker.swift in Sources */,
 				F922E9842598EE8E007F33D4 /* FeedPresenter.swift in Sources */,
 				F922EA832599F708007F33D4 /* FeedContainerNode.swift in Sources */,

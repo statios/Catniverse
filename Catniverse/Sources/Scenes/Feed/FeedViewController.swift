@@ -16,6 +16,13 @@ protocol FeedDisplayLogic: class {
 
 final class FeedViewController: BaseASViewController {
   
+  // MARK: Contatns
+  
+  fileprivate struct Metric {
+    static let mapSize: CGSize = .init(width: Device.width, height: Device.height/2)
+    static let feedSize: CGSize = .init(width: Device.width, height: Device.height/2)
+  }
+  
   // MARK: VIP
   
   var router: (FeedRoutingLogic & FeedDataPassing)?
@@ -28,11 +35,14 @@ final class FeedViewController: BaseASViewController {
   }
   private let feedContainerNode = BaseNode().then {
     $0.backgroundColor = .red
-    $0.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-    $0.cornerRadius = 24
+    $0.view.layer.cornerRadius = 24
+    $0.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    $0.style.preferredSize = Metric.feedSize
   }
   
-  private lazy var mapNode = BaseNode { self.mapView }
+  private lazy var mapNode = BaseNode { self.mapView }.then { _ in
+//    $0.style.preferredSize = Metric.mapSize
+  }
   
   // MARK: Configuring
   
@@ -51,15 +61,32 @@ final class FeedViewController: BaseASViewController {
     router.viewController = viewController
     router.dataStore = interactor
     
-    node.addSubnode(mapNode)
-    node.layoutSpecBlock = { (_, _) in
-      ASInsetLayoutSpec(insets: .zero, child: self.mapNode)
+    node.layoutSpecBlock = { [weak self] (_, _) in
+      guard let `self` = self else { return ASLayoutSpec() }
+      let map = ASInsetLayoutSpec(
+        insets: .zero,
+        child: self.mapNode
+      ).then {
+        $0.style.flexGrow = 1
+        $0.style.flexShrink = 0
+      }
+      let vStack = ASStackLayoutSpec(
+        direction: .vertical,
+        spacing: 0,
+        justifyContent: .start,
+        alignItems: .stretch,
+        children: [map, self.feedContainerNode]
+      )
+      return ASInsetLayoutSpec(
+        insets: .init(top: 0, left: 0, bottom: self.bottomHeight, right: 0),
+        child: vStack
+      )
     }
   }
   
   override func sendRequest() {
     super.sendRequest()
-    Observable.merge(rx.viewWillAppear.take(1))
+    Observable.merge(rx.viewDidAppear.take(1))
       .subscribe(onNext: { [weak self] _ in
         self?.interactor?.fetchCurrentLocation(request: .init())
       }).disposed(by: disposeBag)
