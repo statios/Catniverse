@@ -18,13 +18,10 @@ final class MainWorker: BaseWorker, MainWorkerLogic {
       $0.title = "Feed"
     }
     
-    let addViewController = AddViewController().then {
-      $0.title = "Add"
-    }
-    
     let userViewController = UserViewController().then {
       $0.title = "User"
     }
-    return [feedViewController, addViewController, userViewController]
+    
+    return [feedViewController, userViewController]
   }
 }

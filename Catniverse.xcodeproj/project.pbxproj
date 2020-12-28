@@ -55,6 +55,8 @@
 		F922E9A72598EEA3007F33D4 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9A12598EEA3007F33D4 /* UserInteractor.swift */; };
 		F922E9AC2598EF95007F33D4 /* BaseAsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */; };
 		F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */; };
+		F922EA0F2599D592007F33D4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA0E2599D592007F33D4 /* Device.swift */; };
+		F922EA832599F708007F33D4 /* FeedContainerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EA822599F708007F33D4 /* FeedContainerNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,8 @@
 		F922E9A12598EEA3007F33D4 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAsTabBarController.swift; sourceTree = "<group>"; };
 		F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		F922EA0E2599D592007F33D4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F922EA822599F708007F33D4 /* FeedContainerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,7 @@
 		F922E9512598EAE1007F33D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F922EA0D2599D58C007F33D4 /* Constants */,
 				F922E9522598EAEC007F33D4 /* Bases */,
 				F922E9622598EB2F007F33D4 /* Utilities */,
 				F922E9B02598F198007F33D4 /* Extensions */,
@@ -377,6 +382,7 @@
 				F922E9812598EE8E007F33D4 /* FeedModels.swift */,
 				F922E9822598EE8E007F33D4 /* FeedViewController.swift */,
 				F922E9832598EE8E007F33D4 /* FeedInteractor.swift */,
+				F922EA812599F6E7007F33D4 /* Nodes */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -421,6 +427,22 @@
 				F922E9BA2598F1F5007F33D4 /* UIViewController+Rx.swift */,
 			);
 			path = Reactive;
+			sourceTree = "<group>";
+		};
+		F922EA0D2599D58C007F33D4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F922EA0E2599D592007F33D4 /* Device.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F922EA812599F6E7007F33D4 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				F922EA822599F708007F33D4 /* FeedContainerNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -689,6 +711,7 @@
 				F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */,
 				F922E9732598EE85007F33D4 /* MainWorker.swift in Sources */,
 				F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */,
+				F922EA0F2599D592007F33D4 /* Device.swift in Sources */,
 				F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */,
 				F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */,
 				F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */,
@@ -697,6 +720,7 @@
 				F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */,
 				F922E9462598EA85007F33D4 /* SplashWorker.swift in Sources */,
 				F922E9842598EE8E007F33D4 /* FeedPresenter.swift in Sources */,
+				F922EA832599F708007F33D4 /* FeedContainerNode.swift in Sources */,
 				F922E9882598EE8E007F33D4 /* FeedViewController.swift in Sources */,
 				F922E95A2598EB25007F33D4 /* BaseASViewController.swift in Sources */,
 				F922E9A52598EEA3007F33D4 /* UserModels.swift in Sources */,

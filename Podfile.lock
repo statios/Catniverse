@@ -1,4 +1,5 @@
 PODS:
+  - NMapsMap (3.10.1)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
     - PINCache/Core (= 3.0.3)
@@ -43,6 +44,7 @@ PODS:
   - Then (2.7.0)
 
 DEPENDENCIES:
+  - NMapsMap
   - RxCocoa
   - RxSwift
   - Texture
@@ -50,6 +52,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - NMapsMap
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -60,6 +63,7 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
+  NMapsMap: 1dc27ca06eac287ce1f001a972172766dca2abe1
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
@@ -69,6 +73,6 @@ SPEC CHECKSUMS:
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 90e3092183c1c21bf87552603de52d13d8659b21
+PODFILE CHECKSUM: a13d1d206334c68d067e79cfc64f04eb74b70945
 
 COCOAPODS: 1.10.0

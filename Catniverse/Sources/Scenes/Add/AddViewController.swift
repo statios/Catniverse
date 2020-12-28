@@ -34,6 +34,8 @@ final class AddViewController: BaseASViewController {
     presenter.view = viewController
     router.viewController = viewController
     router.dataStore = interactor
+    
+    view.backgroundColor = .red
   }
 }
 

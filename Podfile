@@ -8,6 +8,7 @@ target 'Catniverse' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Then'
+  pod 'NMapsMap'
 
   target 'CatniverseTests' do
     inherit! :search_paths

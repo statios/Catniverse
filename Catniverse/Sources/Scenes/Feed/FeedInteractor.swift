@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FeedBusinessLogic: class {
-
+  func fetchCurrentLocation(request: FeedModels.UpdateCurrentLocation.Request)
 }
 
 protocol FeedDataStore: class {
@@ -26,5 +26,9 @@ final class FeedInteractor: BaseInteractor, FeedDataStore {
 // MARK: - Business Logic
 
 extension FeedInteractor: FeedBusinessLogic {
-
+  func fetchCurrentLocation(request: FeedModels.UpdateCurrentLocation.Request) {
+    presenter?.createCameraUpdate(
+      response: .init(coordinate: worker?.getCurrentLocation())
+    )
+  }
 }

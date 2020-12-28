@@ -19,4 +19,13 @@ enum MainModels {
       let viewControllers: [UIViewController]
     }
   }
+  
+  enum TappedAddTab {
+    struct Request {
+    }
+    struct Response {
+    }
+    struct ViewModel {
+    }
+  }
 }
