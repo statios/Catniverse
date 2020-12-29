@@ -5,10 +5,6 @@ target 'Catniverse' do
   use_frameworks!
 
   pod 'Texture'
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Then'
-  pod 'NMapsMap'
 
   target 'CatniverseTests' do
     inherit! :search_paths

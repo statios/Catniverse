@@ -41,6 +41,10 @@ class BaseASViewController: ASDKViewController<BaseNode> {
     
   }
   
+  @objc dynamic func setupBinding() {
+    
+  }
+  
   @objc dynamic func setupUI() {
     
   }

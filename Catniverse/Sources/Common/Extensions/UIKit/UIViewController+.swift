@@ -16,4 +16,11 @@ extension UIViewController {
       .safeAreaInsets.bottom ?? 0
     return tabBarHeight + bottomSafeAreaHeight
   }
+  var topHeight: CGFloat {
+    let topSafeAreaHeight = UIApplication.shared
+      .windows.first { $0.isKeyWindow }?
+      .safeAreaInsets.top ?? 0
+    let navigationBarHeight = self.navigationController?.navigationBar.frame.height ?? 0
+    return topSafeAreaHeight + navigationBarHeight
+  }
 }

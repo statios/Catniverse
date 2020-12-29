@@ -5,7 +5,7 @@
 //  Created by KIHYUN SO on 2020/12/28.
 //
 
-import AsyncDisplayKit
+//import AsyncDisplayKit
 
 protocol MainDisplayLogic: class {
   func displayFetchedTabBarItems(viewModel: MainModels.FetchTabBarItems.ViewModel)
