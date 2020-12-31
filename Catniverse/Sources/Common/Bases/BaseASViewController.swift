@@ -16,17 +16,11 @@ class BaseASViewController: ASDKViewController<BaseNode> {
     super.init(node: BaseNode())
     Log.verbose(String(describing: Self.self))
     configure()
-    setupUI()
-    sendRequest()
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
   }
   
   deinit {
     Log.verbose(String(describing: Self.self))
+    disposeBag = DisposeBag()
   }
   
   required init?(coder: NSCoder) {
@@ -34,18 +28,6 @@ class BaseASViewController: ASDKViewController<BaseNode> {
   }
   
   @objc dynamic func configure() {
-    
-  }
-  
-  @objc dynamic func sendRequest() {
-    
-  }
-  
-  @objc dynamic func setupBinding() {
-    
-  }
-  
-  @objc dynamic func setupUI() {
     
   }
 }

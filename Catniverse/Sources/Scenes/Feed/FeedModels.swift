@@ -2,23 +2,23 @@
 //  FeedModels.swift
 //  Catniverse
 //
-//  Created by KIHYUN SO on 2020/12/28.
+//  Created by KIHYUN SO on 2020/12/31.
 //
 
 enum FeedModels {
 
-  enum UpdateCurrentLocation {
+  enum Model {
 
     struct Request {
-      
+
     }
 
     struct Response {
-  
+
     }
 
     struct ViewModel {
-  
+
     }
   }
 }

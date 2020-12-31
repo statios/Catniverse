@@ -9,7 +9,7 @@ import RxSwift
 import RxCocoa
 
 extension ObservableType {
-  func asObservableVoid() -> Observable<Void> {
+  var asObservableVoid: Observable<Void> {
     return map { _ in }
   }
   
@@ -37,5 +37,13 @@ extension ObservableType {
 extension ObservableConvertibleType where Element == Void {
   func asDriver() -> Driver<Element> {
     return self.asDriver(onErrorJustReturn: Void())
+  }
+}
+
+extension PrimitiveSequence {
+  func asDriverOnErrorJustComplete() -> Driver<Element> {
+    return asDriver { error in
+      return Driver.empty()
+    }
   }
 }
