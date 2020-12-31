@@ -19,28 +19,43 @@ final class FeedViewController: BaseASViewController {
   @Injected var interactor: FeedBusinessLogic
   @Injected var router: (FeedRoutingLogic & FeedDataPassing)
 
-  private let mapNode = BaseNode().then {
-    $0.backgroundColor = .blue
-  }
-  
-  private let feedNode = BaseNode().then {
-    $0.backgroundColor = .blue
-  }
+  private let mapNode = FeedMapNode()
+  private let feedNode = FeedBottomNode()
 }
 
 // MARK: - Configure
 extension FeedViewController {
   override func configure() {
-    if let router = router as? FeedRouter,
-       let interactor = interactor as? FeedInteractor,
-       let presenter = interactor.presenter as? FeedPresenter {
-      router.viewController = self
-      presenter.viewController = self
+    guard let router = router as? FeedRouter,
+          let interactor = interactor as? FeedInteractor,
+          let presenter = interactor.presenter as? FeedPresenter else { return }
+    router.viewController = self
+    presenter.viewController = self
+  }
+}
+
+// MARK: - Layout
+extension FeedViewController {
+  override func layoutSpec(node: ASDisplayNode, size: ASSizeRange) -> ASLayoutSpec {
+    let mapNodeLayout = ASInsetLayoutSpec(
+      insets: .zero,
+      child: self.mapNode
+    ).then {
+      $0.style.flexGrow = 1
     }
     
-    node.layoutSpecBlock = { (_, _) in
-      return ASLayoutSpec()
-    }
+    let feedNodeLayout = ASInsetLayoutSpec(
+      insets: .init(top: 0, left: 0, bottom: bottomHeight, right: 0),
+      child: self.feedNode
+    )
+    
+    return ASStackLayoutSpec(
+      direction: .vertical,
+      spacing: -24,
+      justifyContent: .start,
+      alignItems: .stretch,
+      children: [mapNodeLayout, feedNodeLayout]
+    )
   }
 }
 

@@ -16,6 +16,9 @@ class BaseASViewController: ASDKViewController<BaseNode> {
     super.init(node: BaseNode())
     Log.verbose(String(describing: Self.self))
     configure()
+    node.layoutSpecBlock = { [weak self] (node, size) -> ASLayoutSpec in
+      self?.layoutSpec(node: node, size: size) ?? ASLayoutSpec()
+    }
   }
   
   deinit {
@@ -29,5 +32,9 @@ class BaseASViewController: ASDKViewController<BaseNode> {
   
   @objc dynamic func configure() {
     
+  }
+  
+  @objc dynamic func layoutSpec(node: ASDisplayNode, size: ASSizeRange) -> ASLayoutSpec {
+    return ASLayoutSpec()
   }
 }
