@@ -5,7 +5,7 @@
 	<key>NMFClientId</key>
 	<string>aukiyh2sjn</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>🎄</string>
+	<string>위치 정보 제공</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

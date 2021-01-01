@@ -9,7 +9,7 @@ import AsyncDisplayKit
 import Resolver
 import RxSwift
 import RxCocoa
-import MapKit
+import NMapsMap
 
 protocol FeedDisplayLogic: class {
   func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel)
@@ -37,7 +37,7 @@ extension FeedViewController {
     router.viewController = self
     presenter.viewController = self
     
-    [requestCurrentLocation(trigger: rx.viewWillAppear.asObservableVoid.take(1)),
+    [requestCurrentLocation(trigger: rx.viewDidAppear.asObservableVoid.take(1)),
      requestCurrentLocation(trigger: mapContainerNode.locationButtonNode.rx.tap.asObservableVoid)
     ].forEach { $0.disposed(by: disposeBag) }
   }
@@ -79,13 +79,12 @@ extension FeedViewController {
 // MARK: - Display
 extension FeedViewController: FeedDisplayLogic {
   func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel) {
-    let annotation = MKPointAnnotation()
-    annotation.coordinate = CLLocationCoordinate2D(
-      latitude: viewModel.coordinate.latitude,
-      longitude: viewModel.coordinate.longitude
+    let location = NMGLatLng(
+      lat: viewModel.coordinate.latitude,
+      lng: viewModel.coordinate.longitude
     )
-    annotation.title = "Current Location"
-//    mapContainerNode.mapNode.mapView?.addAnnotation(annotation)
-    Log.error(viewModel)
+    let cameraUpdate = NMFCameraUpdate(scrollTo: location)
+    cameraUpdate.animation = .easeIn
+    mapContainerNode.mapNode.mapView?.moveCamera(cameraUpdate)
   }
 }

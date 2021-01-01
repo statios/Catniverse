@@ -7,17 +7,21 @@
 
 import Foundation
 import AsyncDisplayKit
-import MapKit
+import NMapsMap
 
 class MapNode: BaseNode {
   
-  var mapView: MKMapView? {
-    return view as? MKMapView
+  var mapView: NMFMapView? {
+    return view as? NMFMapView
   }
   
   override init() {
     super.init()
-    setViewBlock { MKMapView() }
+    setViewBlock {
+      NMFMapView().then {
+        $0.positionMode = .direction
+      }
+    }
   }
   
 }

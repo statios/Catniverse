@@ -14,16 +14,17 @@ protocol LocationWorkerLoginc: class {
 }
 
 final class LocationWorker: NSObject, LocationWorkerLoginc {
-  lazy var locationManager = CLLocationManager().then {
+  private lazy var locationManager = CLLocationManager().then {
     $0.delegate = self
     $0.desiredAccuracy = kCLLocationAccuracyBest
-    $0.requestAlwaysAuthorization()
+    $0.requestWhenInUseAuthorization()
     $0.startUpdatingLocation()
   }
 }
 
 extension LocationWorker: CLLocationManagerDelegate {
   func fetchCurrentLocationCoordinate() -> CLLocationCoordinate2D? {
+    
     return locationManager.location?.coordinate
   }
   
