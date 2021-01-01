@@ -11,7 +11,6 @@
 		F91EBE47259E405400A8BCB1 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91EBE43259E405400A8BCB1 /* PINRemoteImage.framework */; };
 		F91EBE48259E405400A8BCB1 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91EBE44259E405400A8BCB1 /* PINCache.framework */; };
 		F91EBE49259E405400A8BCB1 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91EBE45259E405400A8BCB1 /* AsyncDisplayKit.framework */; };
-		F91EBE63259E490E00A8BCB1 /* FeedMapNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91EBE62259E490E00A8BCB1 /* FeedMapNode.swift */; };
 		F922E8C52598E89D007F33D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E8C42598E89D007F33D4 /* AppDelegate.swift */; };
 		F922E8CE2598E89E007F33D4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F922E8CD2598E89E007F33D4 /* Image.xcassets */; };
 		F922E8D12598E89E007F33D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F922E8CF2598E89E007F33D4 /* LaunchScreen.storyboard */; };
@@ -60,13 +59,18 @@
 		F922EAC5259B094F007F33D4 /* ASRxTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EAC4259B094F007F33D4 /* ASRxTarget.swift */; };
 		F922EACD259B09DB007F33D4 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EACC259B09DB007F33D4 /* ObservableType.swift */; };
 		F922EAD7259B11DD007F33D4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922EAD6259B11DD007F33D4 /* UIView+.swift */; };
+		F966D496259F3F860001D70F /* MapNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D495259F3F860001D70F /* MapNode.swift */; };
+		F966D49E259F40840001D70F /* MapContainerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D49D259F40840001D70F /* MapContainerNode.swift */; };
+		F966D4A3259F42690001D70F /* SearchBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D4A2259F42690001D70F /* SearchBarNode.swift */; };
+		F966D4A8259F42770001D70F /* LocationButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D4A7259F42770001D70F /* LocationButtonNode.swift */; };
+		F966D4AD259F42820001D70F /* AddButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D4AC259F42820001D70F /* AddButtonNode.swift */; };
+		F966D4B5259F483F0001D70F /* MapOverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966D4B4259F483F0001D70F /* MapOverlayNode.swift */; };
 		F9680D5C259CD78B008F3A58 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D56259CD78B008F3A58 /* FeedPresenter.swift */; };
 		F9680D5D259CD78B008F3A58 /* FeedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D57259CD78B008F3A58 /* FeedWorker.swift */; };
 		F9680D5E259CD78B008F3A58 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D58259CD78B008F3A58 /* FeedRouter.swift */; };
 		F9680D5F259CD78B008F3A58 /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D59259CD78B008F3A58 /* FeedModels.swift */; };
 		F9680D60259CD78B008F3A58 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D5A259CD78B008F3A58 /* FeedViewController.swift */; };
 		F9680D61259CD78B008F3A58 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D5B259CD78B008F3A58 /* FeedInteractor.swift */; };
-		F9680D6A259E36F7008F3A58 /* FeedBottomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D69259E36F7008F3A58 /* FeedBottomNode.swift */; };
 		F9C58420259BA6BE0037B6E8 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5841F259BA6BE0037B6E8 /* Then */; };
 		F9C58426259BA6FD0037B6E8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58425259BA6FD0037B6E8 /* RxSwift */; };
 		F9C58428259BA6FD0037B6E8 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58427259BA6FD0037B6E8 /* RxTest */; };
@@ -98,7 +102,6 @@
 		F91EBE43259E405400A8BCB1 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		F91EBE44259E405400A8BCB1 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		F91EBE45259E405400A8BCB1 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
-		F91EBE62259E490E00A8BCB1 /* FeedMapNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMapNode.swift; sourceTree = "<group>"; };
 		F922E8C12598E89D007F33D4 /* Catniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F922E8C42598E89D007F33D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F922E8CD2598E89E007F33D4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
@@ -153,13 +156,18 @@
 		F922EAC4259B094F007F33D4 /* ASRxTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASRxTarget.swift; sourceTree = "<group>"; };
 		F922EACC259B09DB007F33D4 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		F922EAD6259B11DD007F33D4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F966D495259F3F860001D70F /* MapNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNode.swift; sourceTree = "<group>"; };
+		F966D49D259F40840001D70F /* MapContainerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerNode.swift; sourceTree = "<group>"; };
+		F966D4A2259F42690001D70F /* SearchBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarNode.swift; sourceTree = "<group>"; };
+		F966D4A7259F42770001D70F /* LocationButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButtonNode.swift; sourceTree = "<group>"; };
+		F966D4AC259F42820001D70F /* AddButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonNode.swift; sourceTree = "<group>"; };
+		F966D4B4259F483F0001D70F /* MapOverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayNode.swift; sourceTree = "<group>"; };
 		F9680D56259CD78B008F3A58 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		F9680D57259CD78B008F3A58 /* FeedWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWorker.swift; sourceTree = "<group>"; };
 		F9680D58259CD78B008F3A58 /* FeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
 		F9680D59259CD78B008F3A58 /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		F9680D5A259CD78B008F3A58 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F9680D5B259CD78B008F3A58 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
-		F9680D69259E36F7008F3A58 /* FeedBottomNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBottomNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +354,7 @@
 		F922E9512598EAE1007F33D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F966D480259F18260001D70F /* Components */,
 				F922EA0D2599D58C007F33D4 /* Constants */,
 				F922E9522598EAEC007F33D4 /* Bases */,
 				F922E9622598EB2F007F33D4 /* Utilities */,
@@ -469,11 +478,22 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F966D480259F18260001D70F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F9680D68259E36ED008F3A58 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				F91EBE62259E490E00A8BCB1 /* FeedMapNode.swift */,
-				F9680D69259E36F7008F3A58 /* FeedBottomNode.swift */,
+				F966D495259F3F860001D70F /* MapNode.swift */,
+				F966D4B4259F483F0001D70F /* MapOverlayNode.swift */,
+				F966D49D259F40840001D70F /* MapContainerNode.swift */,
+				F966D4A2259F42690001D70F /* SearchBarNode.swift */,
+				F966D4A7259F42770001D70F /* LocationButtonNode.swift */,
+				F966D4AC259F42820001D70F /* AddButtonNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -706,22 +726,26 @@
 				F922E9772598EE85007F33D4 /* MainInteractor.swift in Sources */,
 				F922EAA1259A4269007F33D4 /* Color.swift in Sources */,
 				F922EABB259B08DE007F33D4 /* ASControlNode+Rx.swift in Sources */,
+				F966D4A8259F42770001D70F /* LocationButtonNode.swift in Sources */,
+				F966D496259F3F860001D70F /* MapNode.swift in Sources */,
 				F922E94A2598EA85007F33D4 /* SplashInteractor.swift in Sources */,
 				F922E9742598EE85007F33D4 /* MainRouter.swift in Sources */,
 				F9680D5F259CD78B008F3A58 /* FeedModels.swift in Sources */,
 				F922E9962598EE97007F33D4 /* AddModels.swift in Sources */,
+				F966D49E259F40840001D70F /* MapContainerNode.swift in Sources */,
 				F922E9762598EE85007F33D4 /* MainViewController.swift in Sources */,
 				F922EACD259B09DB007F33D4 /* ObservableType.swift in Sources */,
 				F9680D5C259CD78B008F3A58 /* FeedPresenter.swift in Sources */,
 				F922E9642598EB6B007F33D4 /* Logging.swift in Sources */,
 				F922EAC5259B094F007F33D4 /* ASRxTarget.swift in Sources */,
 				F922E9592598EB25007F33D4 /* BaseNode.swift in Sources */,
+				F966D4AD259F42820001D70F /* AddButtonNode.swift in Sources */,
 				F922E9472598EA85007F33D4 /* SplashRouter.swift in Sources */,
+				F966D4A3259F42690001D70F /* SearchBarNode.swift in Sources */,
 				F922E95D2598EB25007F33D4 /* BaseInteractor.swift in Sources */,
 				F9680D60259CD78B008F3A58 /* FeedViewController.swift in Sources */,
 				F922E9452598EA85007F33D4 /* SplashPresenter.swift in Sources */,
 				F922E9492598EA85007F33D4 /* SplashViewController.swift in Sources */,
-				F9680D6A259E36F7008F3A58 /* FeedBottomNode.swift in Sources */,
 				F922E95C2598EB25007F33D4 /* BaseRouter.swift in Sources */,
 				F922E9982598EE97007F33D4 /* AddInteractor.swift in Sources */,
 				F922E9972598EE97007F33D4 /* AddViewController.swift in Sources */,
@@ -730,12 +754,12 @@
 				F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */,
 				F922E9732598EE85007F33D4 /* MainWorker.swift in Sources */,
 				F9680D5E259CD78B008F3A58 /* FeedRouter.swift in Sources */,
-				F91EBE63259E490E00A8BCB1 /* FeedMapNode.swift in Sources */,
 				F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */,
 				F922EA0F2599D592007F33D4 /* Device.swift in Sources */,
 				F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */,
 				F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */,
 				F922EAD7259B11DD007F33D4 /* UIView+.swift in Sources */,
+				F966D4B5259F483F0001D70F /* MapOverlayNode.swift in Sources */,
 				F9680D61259CD78B008F3A58 /* FeedInteractor.swift in Sources */,
 				F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */,
 				F922E9482598EA85007F33D4 /* SplashModels.swift in Sources */,
