@@ -90,14 +90,13 @@ extension FeedViewController: FeedDisplayLogic {
     mapContainerNode.mapNode.mapView?.moveCamera(viewModel.cameraUpdate)
   }
   
-  func displayPhotoPicker(viewModel: FeedModels.PhotoPicker.ViewModel) {
-    
+  func displayPhotoPicker(viewModel: FeedModels.PhotoPicker.ViewModel) { 
     if let vc = viewModel.navigationController {
       addNavigationController = vc
       addNavigationController?.view.backgroundColor = .white
       present(vc, animated: true)
     } else if let _ = viewModel.asset?.location?.coordinate {
-      Log.error("사진 위치 정보 포함")
+      //사진이 위치정보를 포함 - router에서 datapass
       addNavigationController?.pushViewController(AddViewController(), animated: true)
     } else {
       addNavigationController?.showAlert(message: "위치 정보가 포함된 사진만 등록할 수 있어요!")
