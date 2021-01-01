@@ -9,11 +9,11 @@ import Foundation
 import CoreLocation
 import MapKit
 
-protocol LocationWorkerLoginc: class {
+protocol LocationWorkerLogic: class {
   func fetchCurrentLocationCoordinate() -> CLLocationCoordinate2D?
 }
 
-final class LocationWorker: NSObject, LocationWorkerLoginc {
+final class LocationWorker: BaseWorker, LocationWorkerLogic {
   private lazy var locationManager = CLLocationManager().then {
     $0.delegate = self
     $0.desiredAccuracy = kCLLocationAccuracyBest
@@ -24,7 +24,6 @@ final class LocationWorker: NSObject, LocationWorkerLoginc {
 
 extension LocationWorker: CLLocationManagerDelegate {
   func fetchCurrentLocationCoordinate() -> CLLocationCoordinate2D? {
-    
     return locationManager.location?.coordinate
   }
   

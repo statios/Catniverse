@@ -2,10 +2,13 @@
 //  AddViewController.swift
 //  Catniverse
 //
-//  Created by KIHYUN SO on 2020/12/28.
+//  Created by KIHYUN SO on 2021/01/02.
 //
 
 import AsyncDisplayKit
+import Resolver
+import RxSwift
+import RxCocoa
 
 protocol AddDisplayLogic: class {
 
@@ -13,35 +16,37 @@ protocol AddDisplayLogic: class {
 
 final class AddViewController: BaseASViewController {
 
-  // MARK: VIP
-
-  var router: (AddRoutingLogic & AddDataPassing)?
-  var interactor: AddBusinessLogic?
-
-  // MARK: Configuring
+  @Injected var interactor: AddBusinessLogic
+  @Injected var router: (AddRoutingLogic & AddDataPassing)
   
-  override func configure() {
-    super.configure()
-    let viewController = self
-    let interactor = AddInteractor()
-    let presenter = AddPresenter()
-    let router = AddRouter()
+}
 
-    viewController.interactor = interactor
-    viewController.router = router
-    interactor.presenter = presenter
-    interactor.worker = AddWorker()
-    presenter.view = viewController
-    router.viewController = viewController
-    router.dataStore = interactor
-    
-    view.backgroundColor = .red
+// MARK: - Configure
+extension AddViewController {
+  override func configure() {
+    if let router = router as? AddRouter,
+       let interactor = interactor as? AddInteractor,
+       let presenter = interactor.presenter as? AddPresenter {
+      router.viewController = self
+      presenter.viewController = self
+    }
+    view.backgroundColor = .white
   }
 }
 
+// MARK: - Layout
+extension AddViewController {
+  override func layoutSpec(node: ASDisplayNode, size: ASSizeRange) -> ASLayoutSpec {
+    return ASLayoutSpec()
+  }
+}
 
-// MARK: - Display Logic
+// MARK: - Request
+extension AddViewController {
+  
+}
 
+// MARK: - Display
 extension AddViewController: AddDisplayLogic {
 
 }

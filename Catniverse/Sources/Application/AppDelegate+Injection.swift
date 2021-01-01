@@ -10,9 +10,12 @@ import Resolver
 extension Resolver: ResolverRegistering {
   public static func registerAllServices() {
     register { LocationWorker() }
-      .implements(LocationWorkerLoginc.self)
+      .implements(LocationWorkerLogic.self)
       .scope(shared)
+    register { PHPickerWorker() }
+      .implements(PHPickerWorkerLogic.self)
     
     FeedRouter.registerAllServices()
+    AddRouter.registerAllServices()
   }
 }

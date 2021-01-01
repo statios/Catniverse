@@ -16,13 +16,13 @@ class MapContainerNode: BaseNode {
   let locationButtonNode = ASButtonNode().then {
     $0.style.preferredSize = CGSize(width: 32, height: 32)
     $0.cornerRadius = 8
-    $0.backgroundColor = .white
+    $0.backgroundColor = .red
     $0.isUserInteractionEnabled = true
   }
   let addButtonNode = ASButtonNode().then {
     $0.style.preferredSize = CGSize(width: 48, height: 48)
     $0.cornerRadius = 24
-    $0.backgroundColor = .white
+    $0.backgroundColor = .red
     $0.isUserInteractionEnabled = true
   }
   
@@ -55,7 +55,7 @@ class MapContainerNode: BaseNode {
     )
     
     let overlayLayoutWithPadding = ASInsetLayoutSpec(
-      insets: .init(top: 40 + 16, left: 16, bottom: 24 + 16, right: 16),
+      insets: .init(top: Device.safeAreaInset.top + 16, left: 16, bottom: 24 + 16, right: 16),
       child: overlayLayout
     )
     

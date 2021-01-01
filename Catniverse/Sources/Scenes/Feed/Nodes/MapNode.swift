@@ -19,7 +19,7 @@ class MapNode: BaseNode {
     super.init()
     setViewBlock {
       NMFMapView().then {
-        $0.positionMode = .direction
+        $0.positionMode = .compass
       }
     }
   }

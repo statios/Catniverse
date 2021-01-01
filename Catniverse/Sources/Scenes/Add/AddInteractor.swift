@@ -2,29 +2,28 @@
 //  AddInteractor.swift
 //  Catniverse
 //
-//  Created by KIHYUN SO on 2020/12/28.
+//  Created by KIHYUN SO on 2021/01/02.
 //
 
 import Foundation
-
-protocol AddBusinessLogic: class {
-
-}
+import Resolver
 
 protocol AddDataStore: class {
 
 }
 
-final class AddInteractor: BaseInteractor, AddDataStore {
-
-  var worker: AddWorkerLogic?
-  var presenter: AddPresentationLogic?
+protocol AddBusinessLogic: class {
 
 }
 
+final class AddInteractor: BaseInteractor, AddDataStore {
+
+//  var worker: AddWorkerLogic?
+  @Injected var presenter: AddPresentationLogic
+
+}
 
 // MARK: - Business Logic
-
 extension AddInteractor: AddBusinessLogic {
 
 }

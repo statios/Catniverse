@@ -12,4 +12,7 @@ struct Device {
   static let size: CGSize = UIScreen.main.bounds.size
   static let width = size.width
   static let height = size.height
+  static let safeAreaInset = UIApplication.shared
+    .windows.first { $0.isKeyWindow }?
+    .safeAreaInsets ?? UIEdgeInsets()
 }

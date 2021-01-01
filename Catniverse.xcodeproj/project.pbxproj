@@ -39,12 +39,6 @@
 		F922E9752598EE85007F33D4 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E96F2598EE85007F33D4 /* MainModels.swift */; };
 		F922E9762598EE85007F33D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9702598EE85007F33D4 /* MainViewController.swift */; };
 		F922E9772598EE85007F33D4 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9712598EE85007F33D4 /* MainInteractor.swift */; };
-		F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98D2598EE97007F33D4 /* AddPresenter.swift */; };
-		F922E9942598EE97007F33D4 /* AddWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98E2598EE97007F33D4 /* AddWorker.swift */; };
-		F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E98F2598EE97007F33D4 /* AddRouter.swift */; };
-		F922E9962598EE97007F33D4 /* AddModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9902598EE97007F33D4 /* AddModels.swift */; };
-		F922E9972598EE97007F33D4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9912598EE97007F33D4 /* AddViewController.swift */; };
-		F922E9982598EE97007F33D4 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E9922598EE97007F33D4 /* AddInteractor.swift */; };
 		F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99C2598EEA3007F33D4 /* UserPresenter.swift */; };
 		F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99D2598EEA3007F33D4 /* UserWorker.swift */; };
 		F922E9A42598EEA3007F33D4 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922E99E2598EEA3007F33D4 /* UserRouter.swift */; };
@@ -75,13 +69,21 @@
 		F9680D5F259CD78B008F3A58 /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D59259CD78B008F3A58 /* FeedModels.swift */; };
 		F9680D60259CD78B008F3A58 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D5A259CD78B008F3A58 /* FeedViewController.swift */; };
 		F9680D61259CD78B008F3A58 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9680D5B259CD78B008F3A58 /* FeedInteractor.swift */; };
-		F9C58420259BA6BE0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5841F259BA6BE0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C58426259BA6FD0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58425259BA6FD0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C58428259BA6FD0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58427259BA6FD0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C5842A259BA6FD0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58429259BA6FD0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C5842C259BA6FD0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5842B259BA6FD0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C5842E259BA6FD0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5842D259BA6FD0037B6E8 /* SwiftPackageProductDependency */; };
-		F9C58434259BA71E0037B6E8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58433259BA71E0037B6E8 /* SwiftPackageProductDependency */; };
+		F968DF8E259F7F3D0044A5D7 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF88259F7F3D0044A5D7 /* AddPresenter.swift */; };
+		F968DF8F259F7F3D0044A5D7 /* AddWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF89259F7F3D0044A5D7 /* AddWorker.swift */; };
+		F968DF90259F7F3D0044A5D7 /* AddRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF8A259F7F3D0044A5D7 /* AddRouter.swift */; };
+		F968DF91259F7F3D0044A5D7 /* AddModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF8B259F7F3D0044A5D7 /* AddModels.swift */; };
+		F968DF92259F7F3D0044A5D7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF8C259F7F3D0044A5D7 /* AddViewController.swift */; };
+		F968DF93259F7F3D0044A5D7 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF8D259F7F3D0044A5D7 /* AddInteractor.swift */; };
+		F968DF9B259F7FA10044A5D7 /* BaseASNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DF9A259F7FA10044A5D7 /* BaseASNavigationController.swift */; };
+		F968DFA3259F8E800044A5D7 /* PHPickerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F968DFA2259F8E800044A5D7 /* PHPickerWorker.swift */; };
+		F9C58420259BA6BE0037B6E8 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5841F259BA6BE0037B6E8 /* Then */; };
+		F9C58426259BA6FD0037B6E8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58425259BA6FD0037B6E8 /* RxSwift */; };
+		F9C58428259BA6FD0037B6E8 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58427259BA6FD0037B6E8 /* RxTest */; };
+		F9C5842A259BA6FD0037B6E8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58429259BA6FD0037B6E8 /* RxRelay */; };
+		F9C5842C259BA6FD0037B6E8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5842B259BA6FD0037B6E8 /* RxCocoa */; };
+		F9C5842E259BA6FD0037B6E8 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F9C5842D259BA6FD0037B6E8 /* RxBlocking */; };
+		F9C58434259BA71E0037B6E8 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F9C58433259BA71E0037B6E8 /* Resolver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,12 +148,6 @@
 		F922E96F2598EE85007F33D4 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
 		F922E9702598EE85007F33D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F922E9712598EE85007F33D4 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		F922E98D2598EE97007F33D4 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
-		F922E98E2598EE97007F33D4 /* AddWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorker.swift; sourceTree = "<group>"; };
-		F922E98F2598EE97007F33D4 /* AddRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouter.swift; sourceTree = "<group>"; };
-		F922E9902598EE97007F33D4 /* AddModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModels.swift; sourceTree = "<group>"; };
-		F922E9912598EE97007F33D4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		F922E9922598EE97007F33D4 /* AddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
 		F922E99C2598EEA3007F33D4 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		F922E99D2598EEA3007F33D4 /* UserWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorker.swift; sourceTree = "<group>"; };
 		F922E99E2598EEA3007F33D4 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
@@ -182,6 +178,14 @@
 		F9680D59259CD78B008F3A58 /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		F9680D5A259CD78B008F3A58 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F9680D5B259CD78B008F3A58 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		F968DF88259F7F3D0044A5D7 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		F968DF89259F7F3D0044A5D7 /* AddWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorker.swift; sourceTree = "<group>"; };
+		F968DF8A259F7F3D0044A5D7 /* AddRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRouter.swift; sourceTree = "<group>"; };
+		F968DF8B259F7F3D0044A5D7 /* AddModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModels.swift; sourceTree = "<group>"; };
+		F968DF8C259F7F3D0044A5D7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		F968DF8D259F7F3D0044A5D7 /* AddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		F968DF9A259F7FA10044A5D7 /* BaseASNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseASNavigationController.swift; sourceTree = "<group>"; };
+		F968DFA2259F8E800044A5D7 /* PHPickerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,11 +193,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C5842C259BA6FD0037B6E8 /* BuildFile in Frameworks */,
-				F9C5842A259BA6FD0037B6E8 /* BuildFile in Frameworks */,
-				F9C58420259BA6BE0037B6E8 /* BuildFile in Frameworks */,
-				F9C58426259BA6FD0037B6E8 /* BuildFile in Frameworks */,
-				F9C58434259BA71E0037B6E8 /* BuildFile in Frameworks */,
+				F9C5842C259BA6FD0037B6E8 /* RxCocoa in Frameworks */,
+				F9C5842A259BA6FD0037B6E8 /* RxRelay in Frameworks */,
+				F9C58420259BA6BE0037B6E8 /* Then in Frameworks */,
+				F9C58426259BA6FD0037B6E8 /* RxSwift in Frameworks */,
+				F9C58434259BA71E0037B6E8 /* Resolver in Frameworks */,
 				F91EBE46259E405400A8BCB1 /* PINOperation.framework in Frameworks */,
 				F91EBE47259E405400A8BCB1 /* PINRemoteImage.framework in Frameworks */,
 				F91EBE48259E405400A8BCB1 /* PINCache.framework in Frameworks */,
@@ -206,8 +210,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C58428259BA6FD0037B6E8 /* BuildFile in Frameworks */,
-				F9C5842E259BA6FD0037B6E8 /* BuildFile in Frameworks */,
+				F9C58428259BA6FD0037B6E8 /* RxTest in Frameworks */,
+				F9C5842E259BA6FD0037B6E8 /* RxBlocking in Frameworks */,
 				9680946B4406DCA3A95B5E11 /* Pods_CatniverseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,7 +237,6 @@
 				1E70DD4AED600B23E5C5B10B /* Pods-CatniverseTests.debug.xcconfig */,
 				C7DD65A3D813CDC03644F08D /* Pods-CatniverseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -405,6 +408,7 @@
 			children = (
 				F922E9542598EB25007F33D4 /* BaseASViewController.swift */,
 				F922E9AB2598EF95007F33D4 /* BaseAsTabBarController.swift */,
+				F968DF9A259F7FA10044A5D7 /* BaseASNavigationController.swift */,
 				F922E9572598EB25007F33D4 /* BaseInteractor.swift */,
 				F922E9532598EB25007F33D4 /* BaseNode.swift */,
 				F922E9552598EB25007F33D4 /* BasePresenter.swift */,
@@ -452,12 +456,12 @@
 		F922E96A2598EE08007F33D4 /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				F922E98D2598EE97007F33D4 /* AddPresenter.swift */,
-				F922E98E2598EE97007F33D4 /* AddWorker.swift */,
-				F922E98F2598EE97007F33D4 /* AddRouter.swift */,
-				F922E9902598EE97007F33D4 /* AddModels.swift */,
-				F922E9912598EE97007F33D4 /* AddViewController.swift */,
-				F922E9922598EE97007F33D4 /* AddInteractor.swift */,
+				F968DF8C259F7F3D0044A5D7 /* AddViewController.swift */,
+				F968DF8D259F7F3D0044A5D7 /* AddInteractor.swift */,
+				F968DF88259F7F3D0044A5D7 /* AddPresenter.swift */,
+				F968DF89259F7F3D0044A5D7 /* AddWorker.swift */,
+				F968DF8A259F7F3D0044A5D7 /* AddRouter.swift */,
+				F968DF8B259F7F3D0044A5D7 /* AddModels.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -527,6 +531,7 @@
 			isa = PBXGroup;
 			children = (
 				F966D4D3259F575B0001D70F /* LocationWorker.swift */,
+				F968DFA2259F8E800044A5D7 /* PHPickerWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -562,11 +567,11 @@
 			);
 			name = Catniverse;
 			packageProductDependencies = (
-				F9C5841F259BA6BE0037B6E8 /* SwiftPackageProductDependency */,
-				F9C58425259BA6FD0037B6E8 /* SwiftPackageProductDependency */,
-				F9C58429259BA6FD0037B6E8 /* SwiftPackageProductDependency */,
-				F9C5842B259BA6FD0037B6E8 /* SwiftPackageProductDependency */,
-				F9C58433259BA71E0037B6E8 /* SwiftPackageProductDependency */,
+				F9C5841F259BA6BE0037B6E8 /* Then */,
+				F9C58425259BA6FD0037B6E8 /* RxSwift */,
+				F9C58429259BA6FD0037B6E8 /* RxRelay */,
+				F9C5842B259BA6FD0037B6E8 /* RxCocoa */,
+				F9C58433259BA71E0037B6E8 /* Resolver */,
 			);
 			productName = Catniverse;
 			productReference = F922E8C12598E89D007F33D4 /* Catniverse.app */;
@@ -588,8 +593,8 @@
 			);
 			name = CatniverseTests;
 			packageProductDependencies = (
-				F9C58427259BA6FD0037B6E8 /* SwiftPackageProductDependency */,
-				F9C5842D259BA6FD0037B6E8 /* SwiftPackageProductDependency */,
+				F9C58427259BA6FD0037B6E8 /* RxTest */,
+				F9C5842D259BA6FD0037B6E8 /* RxBlocking */,
 			);
 			productName = CatniverseTests;
 			productReference = F922E8D72598E89F007F33D4 /* CatniverseTests.xctest */;
@@ -647,9 +652,9 @@
 			);
 			mainGroup = F922E8B82598E89D007F33D4;
 			packageReferences = (
-				F9C5841E259BA6BE0037B6E8 /* RemoteSwiftPackageReference */,
-				F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */,
-				F9C58432259BA71E0037B6E8 /* RemoteSwiftPackageReference */,
+				F9C5841E259BA6BE0037B6E8 /* XCRemoteSwiftPackageReference "Then" */,
+				F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F9C58432259BA71E0037B6E8 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = F922E8C22598E89D007F33D4 /* Products */;
 			projectDirPath = "";
@@ -821,8 +826,11 @@
 			files = (
 				F922E8C52598E89D007F33D4 /* AppDelegate.swift in Sources */,
 				F922E9AC2598EF95007F33D4 /* BaseAsTabBarController.swift in Sources */,
+				F968DF93259F7F3D0044A5D7 /* AddInteractor.swift in Sources */,
+				F968DF9B259F7FA10044A5D7 /* BaseASNavigationController.swift in Sources */,
 				F922E95B2598EB25007F33D4 /* BasePresenter.swift in Sources */,
 				F922E9752598EE85007F33D4 /* MainModels.swift in Sources */,
+				F968DF90259F7F3D0044A5D7 /* AddRouter.swift in Sources */,
 				F922E9A72598EEA3007F33D4 /* UserInteractor.swift in Sources */,
 				F922E9A42598EEA3007F33D4 /* UserRouter.swift in Sources */,
 				F9680D5D259CD78B008F3A58 /* FeedWorker.swift in Sources */,
@@ -831,9 +839,9 @@
 				F922EABB259B08DE007F33D4 /* ASControlNode+Rx.swift in Sources */,
 				F966D496259F3F860001D70F /* MapNode.swift in Sources */,
 				F922E94A2598EA85007F33D4 /* SplashInteractor.swift in Sources */,
+				F968DF91259F7F3D0044A5D7 /* AddModels.swift in Sources */,
 				F922E9742598EE85007F33D4 /* MainRouter.swift in Sources */,
 				F9680D5F259CD78B008F3A58 /* FeedModels.swift in Sources */,
-				F922E9962598EE97007F33D4 /* AddModels.swift in Sources */,
 				F966D49E259F40840001D70F /* MapContainerNode.swift in Sources */,
 				F922E9762598EE85007F33D4 /* MainViewController.swift in Sources */,
 				F922EACD259B09DB007F33D4 /* ObservableType.swift in Sources */,
@@ -841,7 +849,9 @@
 				F922E9642598EB6B007F33D4 /* Logging.swift in Sources */,
 				F922EAC5259B094F007F33D4 /* ASRxTarget.swift in Sources */,
 				F922E9592598EB25007F33D4 /* BaseNode.swift in Sources */,
+				F968DF8F259F7F3D0044A5D7 /* AddWorker.swift in Sources */,
 				F922E9472598EA85007F33D4 /* SplashRouter.swift in Sources */,
+				F968DF92259F7F3D0044A5D7 /* AddViewController.swift in Sources */,
 				F966D4C3259F4D0C0001D70F /* SearchBarNode.swift in Sources */,
 				F966D4DC259F5A4A0001D70F /* AppDelegate+Injection.swift in Sources */,
 				F922E95D2598EB25007F33D4 /* BaseInteractor.swift in Sources */,
@@ -851,24 +861,21 @@
 				F922E9492598EA85007F33D4 /* SplashViewController.swift in Sources */,
 				F922E95C2598EB25007F33D4 /* BaseRouter.swift in Sources */,
 				F966D4D4259F575B0001D70F /* LocationWorker.swift in Sources */,
-				F922E9982598EE97007F33D4 /* AddInteractor.swift in Sources */,
-				F922E9972598EE97007F33D4 /* AddViewController.swift in Sources */,
-				F922E9942598EE97007F33D4 /* AddWorker.swift in Sources */,
 				F966D4CD259F53710001D70F /* TextFieldNode.swift in Sources */,
 				F922E9A62598EEA3007F33D4 /* UserViewController.swift in Sources */,
 				F922E9A22598EEA3007F33D4 /* UserPresenter.swift in Sources */,
 				F922E9732598EE85007F33D4 /* MainWorker.swift in Sources */,
 				F9680D5E259CD78B008F3A58 /* FeedRouter.swift in Sources */,
-				F922E9952598EE97007F33D4 /* AddRouter.swift in Sources */,
 				F922EA0F2599D592007F33D4 /* Device.swift in Sources */,
-				F922E9932598EE97007F33D4 /* AddPresenter.swift in Sources */,
 				F922E9722598EE85007F33D4 /* MainPresenter.swift in Sources */,
 				F922EAD7259B11DD007F33D4 /* UIView+.swift in Sources */,
 				F9680D61259CD78B008F3A58 /* FeedInteractor.swift in Sources */,
 				F922E9BB2598F1F5007F33D4 /* UIViewController+Rx.swift in Sources */,
 				F922E9482598EA85007F33D4 /* SplashModels.swift in Sources */,
+				F968DF8E259F7F3D0044A5D7 /* AddPresenter.swift in Sources */,
 				F922EAC0259B0913007F33D4 /* ASControlTarget.swift in Sources */,
 				F922EA8C259A2D11007F33D4 /* UIViewController+.swift in Sources */,
+				F968DFA3259F8E800044A5D7 /* PHPickerWorker.swift in Sources */,
 				F922E95E2598EB25007F33D4 /* BaseWorker.swift in Sources */,
 				F922E9A32598EEA3007F33D4 /* UserWorker.swift in Sources */,
 				F922EA94259A2D85007F33D4 /* UIApplication.swift in Sources */,
@@ -1050,7 +1057,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Catniverse/Supportings/plists/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1076,7 +1083,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Catniverse/Supportings/plists/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1219,7 +1226,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F9C5841E259BA6BE0037B6E8 /* RemoteSwiftPackageReference */ = {
+		F9C5841E259BA6BE0037B6E8 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -1227,7 +1234,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */ = {
+		F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -1235,7 +1242,7 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		F9C58432259BA71E0037B6E8 /* RemoteSwiftPackageReference */ = {
+		F9C58432259BA71E0037B6E8 /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver";
 			requirement = {
@@ -1246,39 +1253,39 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F9C5841F259BA6BE0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C5841F259BA6BE0037B6E8 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C5841E259BA6BE0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C5841E259BA6BE0037B6E8 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
 		};
-		F9C58425259BA6FD0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C58425259BA6FD0037B6E8 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		F9C58427259BA6FD0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C58427259BA6FD0037B6E8 /* RxTest */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxTest;
 		};
-		F9C58429259BA6FD0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C58429259BA6FD0037B6E8 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		F9C5842B259BA6FD0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C5842B259BA6FD0037B6E8 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		F9C5842D259BA6FD0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C5842D259BA6FD0037B6E8 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58424259BA6FD0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58424259BA6FD0037B6E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		F9C58433259BA71E0037B6E8 /* SwiftPackageProductDependency */ = {
+		F9C58433259BA71E0037B6E8 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9C58432259BA71E0037B6E8 /* RemoteSwiftPackageReference */;
+			package = F9C58432259BA71E0037B6E8 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
 		};
 /* End XCSwiftPackageProductDependency section */

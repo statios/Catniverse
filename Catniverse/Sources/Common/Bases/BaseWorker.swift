@@ -7,8 +7,8 @@
 
 import Foundation
 
-class BaseWorker {
-  init() {
+class BaseWorker: NSObject {
+  override init() {
     Log.verbose(String(describing: Self.self))
   }
   

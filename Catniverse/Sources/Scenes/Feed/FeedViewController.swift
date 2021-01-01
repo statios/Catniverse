@@ -10,9 +10,11 @@ import Resolver
 import RxSwift
 import RxCocoa
 import NMapsMap
+import PhotosUI
 
 protocol FeedDisplayLogic: class {
   func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel)
+  func displayPhotoPicker(viewModel: FeedModels.PhotoPicker.ViewModel)
 }
 
 final class FeedViewController: BaseASViewController {
@@ -20,10 +22,13 @@ final class FeedViewController: BaseASViewController {
   @Injected var interactor: FeedBusinessLogic
   @Injected var router: (FeedRoutingLogic & FeedDataPassing)
 
+  var addNavigationController: BaseASNavigationController?
   private let mapContainerNode = MapContainerNode()
   private let feedNode = BaseNode().then {
-    $0.backgroundColor = .blue
+    $0.backgroundColor = .red
     $0.style.preferredSize = CGSize(width: Device.width, height: Device.width - 88)
+    $0.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    $0.layer.cornerRadius = 24
   }
 
 }
@@ -38,7 +43,8 @@ extension FeedViewController {
     presenter.viewController = self
     
     [requestCurrentLocation(trigger: rx.viewDidAppear.asObservableVoid.take(1)),
-     requestCurrentLocation(trigger: mapContainerNode.locationButtonNode.rx.tap.asObservableVoid)
+     requestCurrentLocation(trigger: mapContainerNode.locationButtonNode.rx.tap.asObservableVoid),
+     requestPhotoPicker(trigger: mapContainerNode.addButtonNode.rx.tap.asObservableVoid)
     ].forEach { $0.disposed(by: disposeBag) }
   }
 }
@@ -71,20 +77,30 @@ extension FeedViewController {
 // MARK: - Request
 extension FeedViewController {
   func requestCurrentLocation(trigger: Observable<Void>) -> Disposable {
-    trigger
-      .bind { [weak self] in self?.interactor.fetchCurrentLocation(request: .init()) }
+    trigger.bind { [weak self] in self?.interactor.fetchCurrentLocation(request: .init()) }
+  }
+  func requestPhotoPicker(trigger: Observable<Void>) -> Disposable {
+    trigger.bind { [weak self] in self?.interactor.fetchPhotoPicker(request: .init()) }
   }
 }
 
 // MARK: - Display
 extension FeedViewController: FeedDisplayLogic {
   func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel) {
-    let location = NMGLatLng(
-      lat: viewModel.coordinate.latitude,
-      lng: viewModel.coordinate.longitude
-    )
-    let cameraUpdate = NMFCameraUpdate(scrollTo: location)
-    cameraUpdate.animation = .easeIn
-    mapContainerNode.mapNode.mapView?.moveCamera(cameraUpdate)
+    mapContainerNode.mapNode.mapView?.moveCamera(viewModel.cameraUpdate)
+  }
+  
+  func displayPhotoPicker(viewModel: FeedModels.PhotoPicker.ViewModel) {
+    
+    if let vc = viewModel.navigationController {
+      addNavigationController = vc
+      addNavigationController?.view.backgroundColor = .white
+      present(vc, animated: true)
+    } else if let _ = viewModel.asset?.location?.coordinate {
+      Log.error("사진 위치 정보 포함")
+      addNavigationController?.pushViewController(AddViewController(), animated: true)
+    } else {
+      addNavigationController?.showAlert(message: "위치 정보가 포함된 사진만 등록할 수 있어요!")
+    }
   }
 }

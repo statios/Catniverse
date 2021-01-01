@@ -2,7 +2,7 @@
 //  AddPresenter.swift
 //  Catniverse
 //
-//  Created by KIHYUN SO on 2020/12/28.
+//  Created by KIHYUN SO on 2021/01/02.
 //
 
 import UIKit
@@ -13,13 +13,11 @@ protocol AddPresentationLogic: class {
 
 final class AddPresenter: BasePresenter {
   
-  weak var view: AddDisplayLogic?
+  weak var viewController: AddDisplayLogic?
 
 }
 
-
-// MARK: - Presentation Logic
-
+// MARK: - Present
 extension AddPresenter: AddPresentationLogic {
   
 }
