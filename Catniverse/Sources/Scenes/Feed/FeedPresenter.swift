@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FeedPresentationLogic: class {
-  
+  func presentCurrentLocation(response: FeedModels.CurrentLocation.Response)
 }
 
 final class FeedPresenter: BasePresenter {
@@ -20,5 +20,8 @@ final class FeedPresenter: BasePresenter {
 
 // MARK: - Present
 extension FeedPresenter: FeedPresentationLogic {
-  
+  func presentCurrentLocation(response: FeedModels.CurrentLocation.Response) {
+    guard let coordinate = response.coordinate else { return }
+    viewController?.displayCurrentLocation(viewModel: .init(coordinate: coordinate))
+  }
 }

@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       $0.rootViewController = SplashViewController()
       $0.makeKeyAndVisible()
     }
-    FeedRouter.registerAllServices()
     return true
   }
 }
-

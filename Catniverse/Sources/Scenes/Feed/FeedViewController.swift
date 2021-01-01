@@ -12,7 +12,7 @@ import RxCocoa
 import MapKit
 
 protocol FeedDisplayLogic: class {
-
+  func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel)
 }
 
 final class FeedViewController: BaseASViewController {
@@ -36,6 +36,10 @@ extension FeedViewController {
           let presenter = interactor.presenter as? FeedPresenter else { return }
     router.viewController = self
     presenter.viewController = self
+    
+    [requestCurrentLocation(trigger: rx.viewWillAppear.asObservableVoid.take(1)),
+     requestCurrentLocation(trigger: mapContainerNode.locationButtonNode.rx.tap.asObservableVoid)
+    ].forEach { $0.disposed(by: disposeBag) }
   }
 }
 
@@ -66,10 +70,22 @@ extension FeedViewController {
 
 // MARK: - Request
 extension FeedViewController {
-  
+  func requestCurrentLocation(trigger: Observable<Void>) -> Disposable {
+    trigger
+      .bind { [weak self] in self?.interactor.fetchCurrentLocation(request: .init()) }
+  }
 }
 
 // MARK: - Display
 extension FeedViewController: FeedDisplayLogic {
-
+  func displayCurrentLocation(viewModel: FeedModels.CurrentLocation.ViewModel) {
+    let annotation = MKPointAnnotation()
+    annotation.coordinate = CLLocationCoordinate2D(
+      latitude: viewModel.coordinate.latitude,
+      longitude: viewModel.coordinate.longitude
+    )
+    annotation.title = "Current Location"
+//    mapContainerNode.mapNode.mapView?.addAnnotation(annotation)
+    Log.error(viewModel)
+  }
 }

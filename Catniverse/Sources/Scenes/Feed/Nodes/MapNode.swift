@@ -11,6 +11,10 @@ import MapKit
 
 class MapNode: BaseNode {
   
+  var mapView: MKMapView? {
+    return view as? MKMapView
+  }
+  
   override init() {
     super.init()
     setViewBlock { MKMapView() }
