@@ -20,7 +20,6 @@ final class FeedPresenter: BasePresenter {
   
 }
 
-
 // MARK: - Present
 extension FeedPresenter: FeedPresentationLogic {
   func presentCurrentLocation(response: FeedModels.CurrentLocation.Response) {

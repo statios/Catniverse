@@ -9,7 +9,7 @@ import Foundation
 import Resolver
 
 protocol AddDataStore: class {
-
+  
 }
 
 protocol AddBusinessLogic: class {
