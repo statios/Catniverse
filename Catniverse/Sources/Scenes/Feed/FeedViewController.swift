@@ -98,7 +98,7 @@ extension FeedViewController: FeedDisplayLogic {
     } else if let _ = viewModel.asset?.location?.coordinate {
       //사진이 위치정보를 포함 - router에서 datapass
       let viewController = AddViewController()
-      viewController.title = "길냥이 등록하기"
+      viewController.title = "정보 입력"
       addNavigationController?.pushViewController(viewController, animated: true)
     } else {
       addNavigationController?.showAlert(message: "위치 정보가 포함된 사진만 등록할 수 있어요!")

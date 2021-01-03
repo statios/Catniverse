@@ -20,10 +20,11 @@ final class AddViewController: BaseASViewController {
   @Injected var router: (AddRoutingLogic & AddDataPassing)
   
   private lazy var tableNode = ASTableNode().then {
-    $0.backgroundColor = .gray
     $0.dataSource = self
     $0.delegate = self
   }
+  
+  private let bios = Bio.allCases
 }
 
 // MARK: - Configure
@@ -71,13 +72,14 @@ extension AddViewController: ASTableDataSource, ASTableDelegate {
   }
   
   func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return bios.count
   }
   
   func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
-    return {
-      let cell = ASCellNode()
-      cell.backgroundColor = .red
+    return { [weak self] in
+      let cell = AddCellNode()
+      let item = self?.bios[indexPath.row]
+      cell.configure(bio: item)
       return cell
     }
   }

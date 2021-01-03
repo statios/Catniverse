@@ -40,7 +40,7 @@ extension FeedPresenter: FeedPresentationLogic {
     if let pickerViewController = response.pickerViewController {
       
       let navigationController = BaseASNavigationController(rootViewController: pickerViewController)
-      pickerViewController.title = "냥 사진 고르긔"
+      pickerViewController.title = "사진 선택"
       navigationController.navigationBar.prefersLargeTitles = true
       navigationController.modalPresentationStyle = .overFullScreen
       viewController?.displayPhotoPicker(
