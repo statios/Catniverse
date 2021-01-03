@@ -529,6 +529,8 @@
 		F966D480259F18260001D70F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F966D495259F3F860001D70F /* MapNode.swift */,
+				F966D4CC259F53710001D70F /* TextFieldNode.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -545,8 +547,6 @@
 		F9680D68259E36ED008F3A58 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				F966D495259F3F860001D70F /* MapNode.swift */,
-				F966D4CC259F53710001D70F /* TextFieldNode.swift */,
 				F966D49D259F40840001D70F /* MapContainerNode.swift */,
 				F966D4C2259F4D0C0001D70F /* SearchBarNode.swift */,
 			);
