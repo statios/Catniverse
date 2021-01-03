@@ -19,7 +19,7 @@ final class AddViewController: BaseASViewController {
   @Injected var interactor: AddBusinessLogic
   @Injected var router: (AddRoutingLogic & AddDataPassing)
   
-  private lazy var tableNode = ASTableNode().then {
+  private lazy var tableNode = ASTableNode(style: .grouped).then {
     $0.dataSource = self
     $0.delegate = self
   }
@@ -36,6 +36,15 @@ extension AddViewController {
       router.viewController = self
       presenter.viewController = self
     }
+  }
+}
+
+// MARK: - DidLoad
+extension AddViewController {
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tableNode.view.separatorStyle = .none
+    tableNode.view.keyboardDismissMode = .onDrag
   }
 }
 
@@ -60,7 +69,7 @@ extension AddViewController: AddDisplayLogic {
 }
 
 // MARK: - TableDataSource
-extension AddViewController: ASTableDataSource, ASTableDelegate {
+extension AddViewController: ASTableDataSource, ASTableDelegate, AddCellNodeDelegate {
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let header = UIView()
     header.backgroundColor = .blue
@@ -80,7 +89,17 @@ extension AddViewController: ASTableDataSource, ASTableDelegate {
       let cell = AddCellNode()
       let item = self?.bios[indexPath.row]
       cell.configure(bio: item)
+      cell.delegate = self
       return cell
     }
+  }
+  
+  func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
+    view.endEditing(true)
+  }
+  
+  func onEditing() {
+    tableNode.setContentOffset(.init(x: 0, y: Device.width - topHeight), animated: true)
+    tableNode.setContentOffset(.init(x: 0, y: Device.width - topHeight), animated: true)
   }
 }
